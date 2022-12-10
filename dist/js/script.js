@@ -1,7 +1,14 @@
 document.addEventListener('DOMContentLoaded',function(){
     const links = document.querySelectorAll('.menu-item');
     for(let i = 0; i < links.length; i++){
-       console.log(links[i]);
+      links[i].addEventListener('click',function(event){
+        event.preventDefault();
+        const blockID = event.target.getAttribute('href')
+        document.getElementById(blockID).scrollIntoView({
+            behavior: 'smooth',
+            block : "start"
+        })
+      }) ;
     }
   
      

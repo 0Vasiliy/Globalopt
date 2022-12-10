@@ -1,0 +1,19 @@
+$main-color: #ec644b;
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+@import 'libs/general';
+
+@import 'blocks/header';
+@import 'blocks/superiority';
+@import 'blocks/organizations';
+@import 'blocks/agent';
+@import 'blocks/delivery';
+@import 'blocks/consultation';
+@import 'blocks/managers';
+@import 'blocks/scheme';
+@import 'blocks/reviews';
+@import 'blocks/query';
+@import 'blocks/map';
+@import 'blocks/footer';
+
+@import 'blocks/media';

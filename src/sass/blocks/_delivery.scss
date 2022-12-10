@@ -1,0 +1,50 @@
+.delivery {
+    min-height: 610px;
+    padding: 50px 0;
+    &__subtitle {
+        max-width: 700px;
+        margin: 40px auto;
+    }
+    &__inner {
+        display: grid;
+        justify-content: space-between;
+        text-align: center;
+        grid-template: minmax(355px, auto) / repeat(4, 260px);
+    }
+    &__item {
+        padding-bottom: 20px;
+        border: 1px solid #cecece;
+        &-title {
+            padding: 20px 0;
+            background-color: #25333c;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            color: #fff;
+        }
+        &-img {
+            margin-top: 5px;
+        }
+        &-current {
+            display: flex;
+            flex-direction: column;
+            color: #2e2e2e;
+            span {
+                font-size: 28px;
+                font-weight: 400;
+                color: $main-color;
+                line-height: 1.2;
+            }
+        }
+        &-descr {
+            margin-top: 10px;
+            padding: 0 10px;
+        }
+        &-btn {
+            margin-top: 20px;
+            height: 45px;
+            width: 160px;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.scheme {
+    min-height: 455px;
+    padding: 50px 0;
+    &__inner {
+        margin-top: 40px;
+        display: grid;
+        column-gap: 30px;
+        row-gap: 20px;
+        align-items: start;
+        grid-template: repeat(2, minmax(115px, auto)) / repeat(4, 263px);
+    }
+    &__item {
+        text-align: center;
+        &-title {
+            margin-top: 10px;
+            margin-bottom: 0;
+            font-size: 16px;
+            font-weight: 700;
+            color: $main-color;
+        }
+        &-descr {
+            color: #3a3a3a;
+        }
+    }
+}

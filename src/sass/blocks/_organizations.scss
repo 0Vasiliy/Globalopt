@@ -1,0 +1,30 @@
+.organizations {
+    padding: 50px 0 60px;
+    &__subtitle {
+        margin: 40px auto;
+        max-width: 900px;
+    }
+    &__inner {
+        display: grid;
+        grid-auto-rows: minmax(370px, auto);
+        justify-content: space-between;
+        grid-template: minmax(370px, auto) / repeat(3, 360px);
+    }
+    &__item {
+        &-img {
+            max-width: 100%;
+        }
+        &-title {
+            margin-top: 20px;
+            margin-bottom: 5px;
+            font-size: 18px;
+            font-weight: 700;
+            color: $main-color;
+            text-align: center;
+        }
+        &-descr {
+            font-weight: 300;
+            color: #3a3a3a;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.query {
+    min-height: 440px;
+    padding: 75px 0 80px;
+    background: url(../img/query/bg.jpg) center (center/cover) no-repeat;
+    &__inner {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    &__text {
+        padding: 20px 0 10px;
+        background-color: #25333c;
+    }
+    &__title {
+        margin: 0;
+        font-size: 19px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+        line-height: .5;
+    }
+    &__subtitle {
+        margin-top: 0;
+        color: #fff;
+    }
+    &__form {
+        min-height: 230px;
+        background-color: rgba(215,213,209, .65);
+        padding: 20px 0 0;
+        .inputs {
+            display: flex;
+            justify-content: center;
+        }
+        input {
+            margin-right: 4px;
+            height: 45px;
+            width: 270px;
+            outline: none;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            padding: 0 20px;
+            font-size: 13px;
+            color: #101010;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        textarea {
+            display: block;
+            margin: 10px auto 0;
+            width: 810px;
+            height: 75px;
+            resize: none;
+            outline: none;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            font-size: 13px;
+            color: #101010;
+        }
+    }
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        height: 45px;
+        width: 180px;
+        margin-top: 20px;
+    }
+}

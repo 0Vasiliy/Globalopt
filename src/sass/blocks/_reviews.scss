@@ -1,0 +1,54 @@
+.reviews {
+    min-height: 470px;
+    padding: 50px 0 60px;
+}
+.slider {
+    max-width: 615px;
+    margin: 40px auto 0;
+    position: relative;
+    text-align: center;
+    position: relative;
+    &__item {
+        display: none;
+        transition: all .4s;
+        &-img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            width: 115px;
+            height: 115px;
+        }
+        &-name {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #3a3a3a;
+        }
+        &-text {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+        &.active {
+            display: block;
+        }
+       
+    }
+    &__btn {
+        display: block;
+        cursor: pointer;
+        text-decoration: none;
+        position: absolute;
+        &:hover {
+            text-decoration: none;
+        }
+        &-left {
+            top: 15%;
+            left: 15%;
+        }
+        &-right {
+            top: 15%;
+            right: 15%;
+        }
+    }
+    
+}

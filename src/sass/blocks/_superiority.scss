@@ -1,0 +1,34 @@
+.superiority {
+    min-height: 590px;
+    background-color: #f3f3f3;
+    padding: 60px 0 55px;
+    &__inner {
+        margin-top: 40px;
+        display: grid;
+        grid-template: repeat(4, minmax(65px, auto)) / repeat(2, 1fr);
+        justify-content: space-between;
+        row-gap: 40px;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        &-text {
+            max-width: 455px;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+        &-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: $main-color;
+        }
+        &-descr {
+            font-weight: 300;
+            color: #3a3a3a;
+        }
+    }
+    &__img {
+        margin-right: 20px;
+    }
+}

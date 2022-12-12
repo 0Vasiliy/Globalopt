@@ -2,6 +2,7 @@ $main-color: #ec644b;
 @import 'libs/bootstrap-reboot.min';
 @import 'libs/fonts';
 @import 'libs/general';
+@import 'libs/variables';
 
 @import 'blocks/header';
 @import 'blocks/superiority';
@@ -15,5 +16,10 @@ $main-color: #ec644b;
 @import 'blocks/query';
 @import 'blocks/map';
 @import 'blocks/footer';
-
+@import 'blocks/forms';
 @import 'blocks/media';
+@import 'blocks/modal';
+@import 'blocks/buttons';
+@import 'blocks/pageup';
+
+

@@ -29,7 +29,7 @@
                 </nav>
                 <div class="phone">
                     <span>Есть вопросы? <a class="phone__link" href="tel:+79264230100">+7 (926) 423 01 00</a></span>
-                <button class="btn phone__btn">Перезвоните мне</button>
+                <button class="btn phone__btn" id="phone__btn">Перезвоните мне</button>
                 </div>
                 <div class="menu__phone">
                     <button class="menu__phone-btn"></button>
@@ -67,7 +67,7 @@
                     </p>
                 </div>
             </div>
-            <button class="btn header__btn">Получить расчет</button>
+            <button class="btn header__btn" id="header__btn">Получить расчет</button>
         </div>
     </header>
     
@@ -430,7 +430,7 @@
                 </p>
                 <div class="phone">
                     <span>Есть вопросы? <a class="phone__link" href="tel:+79264230100">+7 (926) 423 01 00</a></span>
-                    <button class="btn phone__btn">Перезвоните мне</button>
+                    <button class="btn phone__btn" id="btn_mini">Перезвоните мне</button>
                 </div>
             </div>
             <div class="footer__copy">
@@ -443,6 +443,25 @@
             </div>
         </div>
     </footer>
+    <a href="#up" class="pageup">
+        <img src="./icons/up.svg" alt="up">
+    </a>  
+    <div class="overlay">
+        <div class="modal" id="modal_consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" placeholder="Ваше имя" type="text"> 
+                <input name="phone" placeholder="Ваш телефон"> 
+                <input name="email" placeholder="Ваш E-mail" type="email"> 
+
+                <button class="button button_submit" id="">перезвоните мне</button>
+            </form>
+    </div>
+    
+      
+        
 
     <script src="js/script.js"></script>
 </body>

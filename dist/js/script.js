@@ -1,3 +1,4 @@
+//Scroll
 document.addEventListener('DOMContentLoaded',function(){
     const links = document.querySelectorAll('.menu-item');
     for(let i = 0; i < links.length; i++){
@@ -9,25 +10,61 @@ document.addEventListener('DOMContentLoaded',function(){
             block : "start"
         })
       }) ;
-    }
+    } 
+        
+        //Modal
+    let over = document.querySelector('.overlay');
+    let mdClose = document.querySelector('.modal__close');
+    let btnsubmit = document.getElementById('phone__btn');
+    let btnheader = document.getElementById('header__btn');
+    let btnmini = document.getElementById('btn_mini');
+
+    btnsubmit.addEventListener('click',function(e) {
+      e.preventDefault();
+      over.classList.add('active');
+    })
   
-     
-   
-   
-//     const menu = document.querySelector('.menu'),
-//           phoneMenu = document.querySelector('.menu__phone'),
-//           closeMenu = document.querySelector('.menu__close');
-   
-   
-//         //   mobile menu
-//     phoneMenu.addEventListener('click', () => {
-//         phoneMenu.classList.add('active');
-//         menu.classList.add('active');
-   
-//     });
-//     closeMenu.addEventListener('click', () => {
-//         phoneMenu.classList.remove('active');
-//         menu.classList.remove('active');
-//     });
-    
+    btnheader.addEventListener('click',function(e) {
+      e.preventDefault();
+      over.classList.add('active');      
+    })
+
+    btnmini.addEventListener('click',function(e) {
+      e.preventDefault();
+      over.classList.add('active');
+    })
+
+    mdClose.addEventListener('click',function() {
+      mdClose.classList.remove('active');
+      over.classList.remove('active'); 
+    })
+
+    document.addEventListener('click',(e) =>{
+      if(e.target ===over){
+        over.classList.remove('active');
+      }
+    })
+
+        // Up button
+    let upp = document.querySelector('.pageup');
+
+    window.onscroll = function(){
+      if(window.pageYOffset > 580){
+        upp.style.display = "block"
+      }
+      else{
+        upp.style.display ="none"
+      }
+    }
+
+    upp.addEventListener('click',function(){
+      window.scrollBy({
+        top:-document.documentElement.scrollHeight,
+        behavior: "smooth"
+      })
+    })
 })  
+
+
+
+

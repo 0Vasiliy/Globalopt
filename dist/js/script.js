@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+
+//Scroll
+>>>>>>> c195849584ae9ba3ac7cbeb021ce185aa7dde32d
 document.addEventListener('DOMContentLoaded',function(){
 
   //Scroll

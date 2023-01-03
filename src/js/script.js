@@ -1,5 +1,6 @@
-//Scroll
 document.addEventListener('DOMContentLoaded',function(){
+
+  //Scroll
   const links = document.querySelectorAll('.menu-item');
   for(let i = 0; i < links.length; i++){
     links[i].addEventListener('click',function(event){
@@ -18,28 +19,37 @@ document.addEventListener('DOMContentLoaded',function(){
   let btnsubmit = document.getElementById('phone__btn');
   let btnheader = document.getElementById('header__btn');
   let btnmini = document.getElementById('btn_mini');
+  let btnDeliv = document.querySelectorAll('.delivery__item-btn');
+  
 
-  btnsubmit.addEventListener('click',function(e) {
+  for(let i = 0; i < btnDeliv.length; i++){
+      btnDeliv[i].addEventListener('click',(e)=>{
+      e.preventDefault();
+      over.classList.add('active');
+    })
+  }
+  
+  btnsubmit.addEventListener('click',(e) => {
     e.preventDefault();
     over.classList.add('active');
   })
 
-  btnheader.addEventListener('click',function(e) {
+  btnheader.addEventListener('click',(e) => {
     e.preventDefault();
     over.classList.add('active');      
   })
 
-  btnmini.addEventListener('click',function(e) {
+  btnmini.addEventListener('click',(e) => {
     e.preventDefault();
     over.classList.add('active');
   })
 
-  mdClose.addEventListener('click',function() {
+  mdClose.addEventListener('click',(e) => {
     mdClose.classList.remove('active');
     over.classList.remove('active'); 
   })
 
-  document.addEventListener('click',(e) =>{
+  document.addEventListener('click',(e) => {
     if(e.target ===over){
       over.classList.remove('active');
     }
@@ -65,6 +75,7 @@ document.addEventListener('DOMContentLoaded',function(){
   })
 
 })  
+
 
 
 

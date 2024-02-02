@@ -496,3 +496,35 @@
         }
     }
 }
+//modal
+@media(max-width:600px){
+    .modal{
+        max-width: 280px;
+        min-height: 300px;
+    }
+    .feed-form{
+        max-width:250px;
+        input{
+            max-width: 200px;
+            height: 40px;
+        }
+    }  
+}
+
+// button_submit
+@media(max-width: 400px){
+    .button_submit{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 120px;
+        max-height: 30px;
+        font-size: 10px;
+    }
+    .feed-form{
+        max-width:200px;
+        input{
+            max-width: 150px;
+            height: 30px;
+        }
+    }  
+}

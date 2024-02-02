@@ -84,7 +84,7 @@
 .menu {
     transition: all .3s linear;
     position: relative;
-    &__close {
+    &__hamburger {
         display: none;
         position: absolute;
         top: 30px;
@@ -105,7 +105,24 @@
                 transform: rotateZ(45deg);
                 // margin-top: 10px;
             }
+        span.long {
+            width: 36px;
         }
+        }
+        &_active{
+            span {
+                margin-bottom: -2px; 
+                &:nth-child(1){
+                    transform: translateY(10px) rotate(-45deg);
+                }
+                &:nth-child(2){
+                    display: none;
+                }
+                &:nth-child(3){
+                    transform: translateY(3px) rotate(45deg);
+                }
+            }
+        }  
     }
     &__list {
         list-style: none;
@@ -117,6 +134,12 @@
         &:first-child {
             border-left: none;
         }
+    }
+    &__close {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
     }
     &__link {
         display: block;

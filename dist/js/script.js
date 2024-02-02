@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-=======
-
-//Scroll
->>>>>>> c195849584ae9ba3ac7cbeb021ce185aa7dde32d
 document.addEventListener('DOMContentLoaded',function(){
 
   //Scroll
@@ -78,6 +73,19 @@ document.addEventListener('DOMContentLoaded',function(){
       behavior: "smooth"
     })
   })
+
+  //hamburger
+  const hamburger = document.querySelector('.hamburger'),
+        menu = document.querySelector('.menu'),
+        closeElem = document.querySelector('.menu__close');
+
+    hamburger.addEventListener('click', () => {
+        menu.classList.add('active');
+    });
+
+    closeElem.addEventListener('click', () => {
+        menu.classList.remove('active');
+    });
 
 })  
 

@@ -550,38 +550,46 @@
 }
 
 @media(max-width: 400px){
-    .button_submit{
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 200px;
-        max-height: 40px;
-    }
-    .feed-form{
-        max-width:300px;
-        input{
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 250px;
-            height: 40px;
-        }
-    } 
     .menu-hamburger{
-        width: 500px;
-        height: 600px;
-        left: 120px;
-    } 
-    .hamburger-list{
-        font-size: 42px;
-    }
-    
-    .hamburger{
-        left: 680px;
+        left: 55px;
+    }   
+    .hamburger_active{
+       right: 60px;
     }
     .modal{
-        max-width: 580px;
-        min-height: 400px;
-    }
-    body{
-        width: 150vh;   
+        max-width: 280px;
+        min-height: 300px;
     }
 }
+@media(max-width: 380px){
+    .hamburger_active{
+       right: 20px;
+    }   
+}
+@media(max-width: 355px){
+    .hamburger_active{
+       right: 15px;
+    }   
+}
+@media(max-width: 335px){
+    .menu-hamburger{
+        left: 25px;
+    } 
+    .hamburger_active{
+       right: 10px;
+    }  
+}
+@media(max-width: 325px){
+    .hamburger_active{
+       right: 5px;
+    }  
+}
+@media(max-width: 315px){
+    .menu-hamburger{
+        left: 15px;
+    } 
+    .hamburger_active{
+       right: 10;
+    }  
+}
+

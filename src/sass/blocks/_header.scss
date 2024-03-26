@@ -84,46 +84,6 @@
 .menu {
     transition: all .3s linear;
     position: relative;
-    &__hamburger {
-        display: none;
-        position: absolute;
-        top: 30px;
-        right: 10px;
-        z-index: 100;
-        transition: all .3s linear;
-        span {
-            display: block;
-            height: 2px;
-            width: 30px;
-            background-color: $main-color;
-            transition: all .3s linear;
-            
-            &:first-child {
-                transform: rotateZ(-45deg);
-            }
-            &:last-child {
-                transform: rotateZ(45deg);
-                // margin-top: 10px;
-            }
-        span.long {
-            width: 36px;
-        }
-        }
-        &_active{
-            span {
-                margin-bottom: -2px; 
-                &:nth-child(1){
-                    transform: translateY(10px) rotate(-45deg);
-                }
-                &:nth-child(2){
-                    display: none;
-                }
-                &:nth-child(3){
-                    transform: translateY(3px) rotate(45deg);
-                }
-            }
-        }  
-    }
     &__list {
         list-style: none;
         display: flex;
@@ -134,12 +94,6 @@
         &:first-child {
             border-left: none;
         }
-    }
-    &__close {
-        position: absolute;
-        top: 25px;
-        right: 25px;
-        cursor: pointer;
     }
     &__link {
         display: block;
@@ -177,5 +131,34 @@
             }
         }
 
+    }
+}
+
+.menu-hamburger {
+        position: absolute;
+        top: 30px;
+        right: 100px;
+        z-index: 1000;
+        transition: all .3s linear; 
+        width: 250px;
+        height: 400px;
+        border: 1px solid red;   
+        background-color: white;  
+    }
+.hamburger-list{
+    padding: 30px;
+    font-size: 24px;
+    font-weight: 300;
+    list-style-type: none;
+    &:hover{
+        list-style-type: none;      
+    }
+}
+.menu-link{
+    color: gray;
+    text-decoration: none;
+    &:hover{
+        color: teal;   
+        text-decoration: none;    
     }
 }

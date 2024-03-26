@@ -36,7 +36,7 @@
             width: 270px;
             outline: none;
             border: 1px solid #ccc;
-            border-radius: 20px;
+            border-radius: 10px;
             padding: 0 20px;
             font-size: 13px;
             color: #101010;
@@ -47,7 +47,9 @@
         textarea {
             display: block;
             margin: 10px auto 0;
-            width: 810px;
+            width: 100%;
+            width: 820px;
+           
             height: 75px;
             resize: none;
             outline: none;
@@ -65,4 +67,10 @@
         width: 180px;
         margin-top: 20px;
     }
+}
+.inputs-textarea{
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
 }

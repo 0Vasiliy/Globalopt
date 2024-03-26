@@ -19,8 +19,6 @@
         }
         .phone {
             width: 400px;
-            align-items: center;
-            justify-content: space-between;
         }
     }
     .superiority {
@@ -167,47 +165,46 @@
         }
         .menu {
             display: none;
-            position: fixed;
-            width: 50vw;
-            top: 0;
-            left: 0;
-            height: 100vh;
-            padding: 30px 20px 10px;
-            background-color: rgba(0,0,0, 0.8);
-            z-index: 10;
-            transition: display .3s linear;
-            &__close {
-                display: block;
-                transition: all .3s linear;
-            }
-            &__list {
-                height: 90%;
-                flex-direction: column;
-                justify-content: space-between;
-            }
-            &__item {
-                border-left: none;
-                text-align: center;
-            }
-            &__link {
-                font-size: 20px;
-            }
-            &__phone {
-                display: block;
-                transition: all .3s linear;
-                &.active {
-                    transition: all .3s linear;
-                    display: none;
-                }
-            }
-            &.active {
-                transition: display .3s linear;
-                display: block;
-            }
+            // position: fixed;
+            // width: 50vw;
+            // top: 0;
+            // left: 0;
+            // height: 100vh;
+            // padding: 30px 20px 10px;
+            // background-color: rgba(0,0,0, 0.8);
+            // z-index: 10;
+            // transition: display .3s linear;
+            // &__close {
+            //     display: block;
+            //     transition: all .3s linear;
+            // }
+            // &__list {
+            //     height: 90%;
+            //     flex-direction: column;
+            //     justify-content: space-between;
+            // }
+            // &__item {
+            //     border-left: none;
+            //     text-align: center;
+            // }
+            // &__link {
+            //     font-size: 20px;
+            // }
+            // &__phone {
+            //     display: block;
+            //     transition: all .3s linear;
+            //     &.active {
+            //         transition: all .3s linear;
+            //         display: none;
+            //     }
+            // }
+            // &.active {
+            //     transition: display .3s linear;
+            //     display: block;
+            // }
         }
         .phone {
             flex-direction: column;
-            width: unset;
             span {
                 margin-bottom: 10px;
                 margin-right: 0;
@@ -317,8 +314,8 @@
                 margin-bottom: 10px;
             }
             textarea {
-                width: 90%;
                 margin-top: 0;
+                width: 99%;
             }
         }
 
@@ -335,6 +332,59 @@
             }
         }
     }
+    .hamburger{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    height: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    cursor: pointer;
+    span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: white;
+    }
+    span.long {
+        width: 36px;
+    }
+    }
+    .hamburger_active{
+        top: 7px;
+        right: 60px;
+        height: 19px;
+        span {
+            margin-bottom: -2px; 
+            &:nth-child(1){
+                transform: translateY(9px) rotate(-45deg);
+            }
+            &:nth-child(2){
+                display: none;
+            }
+            &:nth-child(3){
+                transform: translateY(-9px) rotate(45deg);
+            }
+        }
+    } 
+    .menu-hamburger{
+        right: 90px;
+    }   
+}
+@media (max-width: 730px){
+    .modal{
+        max-width: 280px;
+        min-height: 300px;
+    }
+    .feed-form{
+        max-width:250px;
+        input{
+            max-width: 200px;
+            height: 40px;
+        }
+    }  
 }
 @media (max-width: 575px) {
     .title {
@@ -345,7 +395,7 @@
         margin: 15px auto;
     }
     .btn {
-        font-size: 18px;
+        font-size: 14px;
     }
     .header {
         &__top {
@@ -366,7 +416,7 @@
                 align-items: center;
             }
             &__btn {
-                width: 230px;
+                width: 180px;
                 height: 50px;
                 margin-top: 5px;
             }
@@ -400,7 +450,8 @@
            }
        }
        &__btn {
-           width: 270px;
+           width: 180px;
+           height: 50px;
        }
     }
     
@@ -462,15 +513,10 @@
                 margin-bottom: 10px;
             }
             textarea {
-                width: 96%;
                 height: 100px;
                 margin-top: 0;
             }
         }
-        &__btn {
-            width: 240px;
-        }
-
     }
     .footer {
         padding: 15px 0;
@@ -485,7 +531,8 @@
                 align-items: center;
             }
             &__btn {
-                width: 240px;
+                width: 180px;
+                font-size: 14px ;
             }
         }
         &__copy {
@@ -495,36 +542,46 @@
             }
         }
     }
-}
-//modal
-@media(max-width:600px){
-    .modal{
-        max-width: 280px;
-        min-height: 300px;
+    .query__form .inputs{
+        padding-left: 30px;
+        padding-right: 30px;
     }
-    .feed-form{
-        max-width:250px;
-        input{
-            max-width: 200px;
-            height: 40px;
-        }
-    }  
+  
 }
 
-// button_submit
 @media(max-width: 400px){
     .button_submit{
         margin-left: auto;
         margin-right: auto;
-        max-width: 120px;
-        max-height: 30px;
-        font-size: 10px;
+        max-width: 250px;
+        max-height: 40px;
     }
     .feed-form{
-        max-width:200px;
+        max-width:300px;
         input{
-            max-width: 150px;
-            height: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 250px;
+            height: 40px;
         }
-    }  
+    } 
+    .menu-hamburger{
+        width: 500px;
+        height: 600px;
+        left: 120px;
+    } 
+    .hamburger-list{
+        font-size: 42px;
+    }
+    
+    .hamburger{
+        left: 680px;
+    }
+    .modal{
+        max-width: 580px;
+        min-height: 400px;
+    }
+    body{
+        width: 150vh;   
+    }
 }

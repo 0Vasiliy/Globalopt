@@ -1,7 +1,8 @@
 .header {
     min-height: 680px;
     padding: 20px 0 80px;
-    background: url(../img/header/bg.jpg) center (center / cover) no-repeat;
+    // background: url(../img/header/bg.jpg) center (center / cover) no-repeat;
+     background-color: gray;
     &__top {
         display: flex;
         align-items: center;
